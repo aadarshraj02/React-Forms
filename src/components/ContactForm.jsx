@@ -27,6 +27,13 @@ function ContactForm() {
               type="text"
               name="name"
             />
+            <label htmlFor="email">E-mail</label>
+            <input
+              className="h-[40px] px-2 w-full border-2 relative rounded-md
+              border-black"
+              type="email"
+              name="name"
+            />
           </form>
         </div>
       </div>
