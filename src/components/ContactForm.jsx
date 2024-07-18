@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { MdMessage } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
-  let name;
+  const [name, setName] = useState();
   let email;
   let text;
 
   const onSubmit = (event) => {
     event.preventDefault();
-    name = event.target[0].value;
+    setName(event.target[0].value);
     email = event.target[1].value;
     text = event.target[2].value;
   };
@@ -54,6 +54,7 @@ function ContactForm() {
             />
             <Button text="Submit"></Button>
           </form>
+          <div>{name + "" + email + "" + text + ""}</div>
         </div>
       </div>
       <div>
