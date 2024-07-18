@@ -19,7 +19,7 @@ function ContactForm() {
           VIA EMAIL <IoIosCall></IoIosCall>
         </button>
         <div className="w-full flex flex-col">
-          <form action="">
+          <form action="" className="flex flex-col gap-2">
             <label htmlFor="name">Name</label>
             <input
               className="h-[40px] px-2 w-full border-2 relative rounded-md
@@ -32,7 +32,14 @@ function ContactForm() {
               className="h-[40px] px-2 w-full border-2 relative rounded-md
               border-black"
               type="email"
-              name="name"
+              name="email"
+            />
+            <label htmlFor="text">Text</label>
+            <textarea
+              className=" px-2 w-full border-2 relative rounded-md
+              border-black"
+              type="text"
+              name="text"
             />
           </form>
         </div>
