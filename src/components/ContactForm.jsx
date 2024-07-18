@@ -5,9 +5,7 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
-  const onViaCallSubmit = () => {
-    console.log("Call button clicked");
-  };
+
 
   return (
     <div className="flex max-w-[1000px] mx-auto justify-between">
@@ -18,7 +16,7 @@ function ContactForm() {
             icon={<MdMessage></MdMessage>}
           ></Button>
           <Button
-            onClick={onViaCallSubmit}
+           
             text="VIA CALL"
             icon={<IoIosCall />}
           ></Button>
