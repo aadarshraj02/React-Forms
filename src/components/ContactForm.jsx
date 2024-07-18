@@ -6,7 +6,7 @@ import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
   return (
-    <div className="flex max-w-[1000px] mx-auto">
+    <div className="flex max-w-[1000px] mx-auto justify-between">
       <div className="flex flex-col gap-5">
         <div className="flex gap-10">
           <Button
@@ -15,8 +15,8 @@ function ContactForm() {
           ></Button>
           <Button text="VIA CALL" icon={<IoIosCall />}></Button>
         </div>
-        <button className="flex items-center justify-center w-full border-2 border-black h-10 rounded-md">
-          VIA EMAIL <IoIosCall></IoIosCall>
+        <button className="flex items-center justify-center w-full border-2 border-black h-10 rounded-md gap-5">
+          VIA EMAIL <IoIosMail></IoIosMail>
         </button>
         <div className="w-full flex flex-col">
           <form action="" className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ function ContactForm() {
               type="text"
               name="text"
             />
-            <Button text = "Submit"></Button>
+            <Button text="Submit"></Button>
           </form>
         </div>
       </div>
