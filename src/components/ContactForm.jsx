@@ -5,11 +5,15 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
+  let name;
+  let email;
+  let text;
+
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target[0].value);
-    console.log(event.target[1].value);
-    console.log(event.target[2].value);
+    name = event.target[0].value;
+    email = event.target[1].value;
+    text = event.target[2].value;
   };
 
   return (
