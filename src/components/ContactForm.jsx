@@ -5,6 +5,10 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
+  const onViaCallSubmit = () => {
+    console.log("Call button clicked");
+  };
+
   return (
     <div className="flex max-w-[1000px] mx-auto justify-between">
       <div className="flex flex-col gap-5">
@@ -13,7 +17,11 @@ function ContactForm() {
             text="VIA SUPPORT CHAT"
             icon={<MdMessage></MdMessage>}
           ></Button>
-          <Button text="VIA CALL" icon={<IoIosCall />}></Button>
+          <Button
+            onClick={onViaCallSubmit}
+            text="VIA CALL"
+            icon={<IoIosCall />}
+          ></Button>
         </div>
         <button className="flex items-center justify-center w-full border-2 border-black h-10 rounded-md gap-5">
           VIA EMAIL <IoIosMail></IoIosMail>
