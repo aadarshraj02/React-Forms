@@ -41,6 +41,7 @@ function ContactForm() {
               type="text"
               name="text"
             />
+            <Button text = "Submit"></Button>
           </form>
         </div>
       </div>
