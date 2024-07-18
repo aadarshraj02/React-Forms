@@ -6,14 +6,14 @@ import { IoIosMail } from "react-icons/io";
 
 function ContactForm() {
   const [name, setName] = useState();
-  let email;
-  let text;
+  const [email, setEmail] = useState();
+  const [text, setText] = useState();
 
   const onSubmit = (event) => {
     event.preventDefault();
     setName(event.target[0].value);
-    email = event.target[1].value;
-    text = event.target[2].value;
+    setEmail(event.target[1].value);
+    setText(event.target[2].value);
   };
 
   return (
