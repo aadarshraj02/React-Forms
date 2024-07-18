@@ -7,7 +7,9 @@ import { IoIosMail } from "react-icons/io";
 function ContactForm() {
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(event);
+    console.log(event.target[0].value);
+    console.log(event.target[1].value);
+    console.log(event.target[2].value);
   };
 
   return (
